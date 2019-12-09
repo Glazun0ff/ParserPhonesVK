@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+	<title>Парсинг моб.номеров из VK</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:100,100i,300,300i,400,400i,500,500i&amp;subset=cyrillic">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div class="wrapper">
+	<div class="container">
+		<h1>Парсинг моб.номеров из VK</h1>
+		<form class="form" action='index.php' method="get">
+			<input type="text" name="group_id" placeholder="id группы">
+			<button type="submit" id="button">ok</button>
+			<br><br><div id="process"></div>
+		</form>
+	</div>
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+        $('#button').click(function(){
+            $('#process').html('Идёт процесс парсинга моб.номеров...');
+			//мигание
+			setInterval(function() {
+			    $('#process').fadeToggle();
+			}, 500);
+        });
+    });
+</script>
+</body>
+</html>
