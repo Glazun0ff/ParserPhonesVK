@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700');
+
 * {
-    margin: 0px;
+    margin: 20px;
     padding: 0px;
 }
 body {
-    /*font-family: 'Open Sans', sans-serif;*/
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: normal;
     line-height: 34px;
 }
 table {
-    /*font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;*/
+    font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     border-collapse: collapse;
     text-align: center;
@@ -33,6 +34,8 @@ td {
 }
 td {
     background: #D8E6F3;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 th:first-child,
 td:first-child {
